@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage6.master.cs"
+    Inherits="MasterPage6" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: right;
+        }
+        .style2
+        {
+            font-size: xx-large;
+            color: black;
+        }
+    </style>
+</head>
+<body bgcolor="white" style="height: 761px; width: 1239px">
+    <form id="form1" runat="server">
+        <div class="logo" style="margin-left: 600px;">
+            <h1 style="height: 60px;">
+                <img src="photo/bdlogo.jpg" style="width: 98px; height: 120px; margin-left: 90px;" /></h1>
+            <p>
+                &nbsp;</p>
+            <h1>
+                <span class="style1" style="">Bangladesh Railway</span></h1>
+        </div>
+        <div style="width: 1228px">
+            <asp:Menu ID="Menu1" runat="server" ForeColor="black" Height="57px" Orientation="Horizontal"
+                Style="color: #FFFFCC; text-align: center; margin-left: 125px; background: #DFEDFA"
+                Width="1208px">
+                <Items>
+                    <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="RESERVATION" Value="RESERVATION" NavigateUrl="~/reservation.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="CANCELLATION" Value="CANCELLATION" NavigateUrl="~/cancel.aspx">
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="SEARCH" Value="SEARCH" NavigateUrl="~/reservation.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="style1">
+                <a href="login.aspx"><span class="style2">Logout</span></a>&nbsp;&nbsp;&nbsp;
+                <br />
+            </div>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <div id="footer">
+            <font color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &copy;All rights reserved.BAPPY;ROXY;MAMUN;RASHEL;TISHA</font>
+        </div>
+</body>
+</html>

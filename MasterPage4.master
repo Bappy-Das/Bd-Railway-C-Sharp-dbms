@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage4.master.cs"
+    Inherits="MasterPage4" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: "Academy Engraved LET";
+        }
+    </style>
+</head>
+<body bgcolor="Black">
+    <form id="form1" runat="server">
+    <div align="center" style="color: #FFFFFF; background-color: #000000;">
+        <br />
+        <br />
+        <h1>
+            <span class="style1">Administrator</span></h1>
+        <br />
+        <br />
+        <asp:Menu ID="Menu1" runat="server" Height="40px" Orientation="Horizontal" Width="1300px"
+            ForeColor="Black" Style="color: #00FFFF" BackColor="#FFFBD6" BorderColor="#FF0066"
+            BorderStyle="Inset" BorderWidth="4px" DynamicHorizontalOffset="2" Font-Names="Verdana"
+            Font-Size="x-large" StaticSubMenuIndent="10px">
+            <StaticSelectedStyle BackColor="#FFCC66" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/adminediting.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Add Train" Value="Add" NavigateUrl="~/Addtrain.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Delete" Value="Delete"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin.aspx" Text="Logout" Value="Logout"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+        <br />
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div style="background-color: #000000; height: 140px; width: 1079px;">
+    </div>
+</body>
+</html>

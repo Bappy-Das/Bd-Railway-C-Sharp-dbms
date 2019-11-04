@@ -1,0 +1,55 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage5.master.cs"
+    Inherits="MasterPage5" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <head>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div>
+                    <h1 class="style2">
+                        BANGLADESH RAILWAY
+                    </h1>
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#" title="">Home</a></li>
+                    <li><a href="#" title="">ABBB</a></li>
+                    <li><a href="#" title="">Gallery</a></li>
+                    <li><a href="#" title="">About</a></li>
+                    <li><a href="#" title="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+    </body>
+</html>

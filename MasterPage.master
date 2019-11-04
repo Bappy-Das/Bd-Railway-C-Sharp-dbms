@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-family: "Academy Engraved LET";
+            color: #CC0000;
+            font-size: 54px;
+            font-weight: normal;
+        }
+        .style3
+        {
+            color: #FFFFCC;
+        }
+        .style4
+        {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>This is title</title>
+        <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header-wrapper">
+                <div id="header">
+                    <div id="logo">
+                        <h1>
+                            <img src="photo/bdlogo.jpg" style="width: 130px; background-color: #FFFFFF; height: 120px;" /></h1>
+                        <h1>
+                            <span>Bangladesh Railway</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-wrapper">
+                <div id="menu">
+                    <ul>
+                        <li><a href="login.aspx">Homepage</a></li><li></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admin.aspx">Admin</a></li>
+                        <li><a href="search1.aspx">Search</a></li>
+                        <li><a href="contactus.aspx" a>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <p style="background-color: #003366">
+                <span class="style3">&copy;All rights reserved.BAPPY:ROXY:MAMUN:RASHEL:TISHA</span>......</p>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
